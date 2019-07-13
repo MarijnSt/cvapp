@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Home from './Home'
-import Skills from './Skills'
-import Experience from './Experience'
-import Portfolio from './Portfolio'
-import Contact from './Contact'
+import Home from './content/Home'
+import Skills from './content/Skills'
+import Experience from './content/Experience'
+import Portfolio from './content/Portfolio'
+import Contact from './content/Contact'
 
 const Content = ({display}) => {
     let displayContent

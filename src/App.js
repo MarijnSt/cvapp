@@ -5,9 +5,19 @@ import Content from './components/Content'
 function App() {
   const [display, setDisplay] = useState('Home')
 
+  //Textcontent van p meegeven als display, div class active geven
   const changeDisplay = (event) => {
-    const selected = event.target.nextSibling.textContent
-    setDisplay(selected)
+    console.log(event.target)
+    
+    const tag = event.target.tagName
+
+    if(tag.includes('DIV')){
+      console.log('selected van child p halen')
+    } else {
+      console.log('selected via div van child p halen')
+    }
+    
+    // setDisplay(selected)
   }
 
   return (

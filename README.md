@@ -10,3 +10,5 @@ Based on the different parts of my cv and vcard:
 
 ### Todo
     *   Add dark mode
+    *   SVGs gebruiken en met scss aanpassen
+    *   Changedisplay afwerken
