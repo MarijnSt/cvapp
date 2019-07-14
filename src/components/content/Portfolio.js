@@ -4,7 +4,7 @@ const Portfolio = () => {
 
     return (
         <div>
-            Elaba portfolio
+            <h1>Projects on github</h1>
         </div>
     )
 }

@@ -4,7 +4,7 @@ const Skills = () => {
 
     return (
         <div>
-            Elaba skills 
+            <h1>Skills</h1> 
         </div>
     )
 }

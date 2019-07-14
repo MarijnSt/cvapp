@@ -4,7 +4,7 @@ const Experience = () => {
 
     return (
         <div>
-            Elaba experience 
+            <h1>Work experience</h1>
         </div>
     )
 }

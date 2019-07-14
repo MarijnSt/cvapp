@@ -4,7 +4,7 @@ const Contact = () => {
 
     return (
         <div>
-            Elaba contact 
+            <h1>Contact me</h1> 
         </div>
     )
 }

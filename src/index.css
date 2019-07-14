@@ -1,35 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Mono:400,400i,700,700i&display=swap");
+h1 {
+  color: #51A3A3;
+  font-family: "Roboto Mono", monospace;
+}
+
+.menu-items p {
+  font-family: "Roboto Mono", monospace;
+}
+
 .menu-items {
-  width: 100%;
-  height: 95%;
-  margin: auto;
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .menu-item {
-  font-size: 10px;
+  font-size: 8px;
   color: #CCDBDC;
   text-align: center;
 }
 .menu-item svg {
-  width: 35px;
+  width: 25px;
   fill: #CCDBDC;
-  transition: all 0.5s ease;
-}
-.menu-item .hidden {
-  opacity: 0.1;
-  visibility: hidden;
   transition: all 0.5s ease;
 }
 
 .menu-item:hover svg {
   fill: #9BD1E5;
-}
-.menu-item:hover .hidden {
-  visibility: visible;
-  opacity: 1;
-  color: #9BD1E5;
 }
 
 #active-menu .hidden {
@@ -45,20 +43,66 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template: 1fr 90px/1fr;
 }
 .App .menu-container {
   background: #01161E;
   color: #CCDBDC;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .App .content-container {
   background: #CCDBDC;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+@media (min-width: 850px) {
+  .App {
+    display: grid;
+    grid-template: 100%/90px 1fr !important;
+  }
+  .App .menu-container {
+    order: 1;
+  }
+  .App .menu-container .menu-items {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .App .menu-container .menu-items .menu-item {
+    font-size: 10px;
+  }
+  .App .menu-container .menu-items svg {
+    width: 35px;
+  }
+  .App .content-container {
+    order: 2;
+  }
+
+  h1 {
+    color: red;
+  }
+
+  .menu-item .hidden {
+    opacity: 0.1;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .menu-item:hover svg {
+    fill: #9BD1E5;
+  }
+  .menu-item:hover .hidden {
+    visibility: visible;
+    opacity: 1;
+    color: #9BD1E5;
+  }
+}
 body {
   margin: 0;
   padding: 0;

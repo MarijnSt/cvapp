@@ -49,8 +49,8 @@ function App() {
 
   return (
     <div className="App">
-      <Menu handleClick={changeDisplay}/>
       <Content display={display}/>
+      <Menu handleClick={changeDisplay}/>
     </div>
   );
 }
