@@ -1,0 +1,62 @@
+@import 'colors';
+@import 'type';
+
+.home-container {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template: 10% 1fr 1fr/100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    .page-name {
+        justify-self: end;
+        align-self: flex-start;
+        color: $main;
+        font-family: $roboto-mono;
+        font-size: 23px;
+    }
+
+    .profile-container {
+        padding-top: 50px;
+        
+        h2 {
+            color: $main;
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+
+        h3 {
+            color: $dark;
+            font-weight: 400;
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            color: $dark;
+        }
+    }
+}
+
+.profile-png {
+    width: 100%;
+    max-width: 150px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em 0;
+
+    svg {
+        width: 2em;
+        fill: $dark;
+    }
+
+    svg:hover {
+        fill: $main;
+    }
+}

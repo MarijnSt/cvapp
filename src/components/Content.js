@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Home from './content/Home'
+import Home from './content/Home/Home'
 import Skills from './content/Skills'
 import Experience from './content/Experience'
 import Portfolio from './content/Portfolio'

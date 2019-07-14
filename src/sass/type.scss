@@ -7,11 +7,12 @@
 $roboto-mono: 'Roboto Mono', monospace;
 $lato: 'Lato', sans-serif;
 
-h1 {
+h1, h2, h3 {
     color: $main;
     font-family: $roboto-mono;
 }
 
-.menu-items p {
+div.menu-item > p {
+    margin: 1em auto;
     font-family: $roboto-mono;
 }
