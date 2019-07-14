@@ -11,11 +11,11 @@ Based on the different parts of my cv and vcard:
 
 ### Todo
 
-*   Add default active menu item
 *   Add responsiveness to content
 *   Add dark mode
 *   API call
 
 ### Finished
 
-*   Basic menu + responsive
+*   Basic menu + responsive + default active id
+*   Basic home pagina

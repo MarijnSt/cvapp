@@ -5,7 +5,7 @@ const Profile = () => {
 
     return (
         <div className="profile-container">
-            <img className="profile-png" src={photo}/>
+            <img className="profile-png" src={photo} alt="marijn"/>
             <h2>Marijn Stammeleer</h2>
             <h3>Junior Web Developer</h3>
             <div className="social-links">

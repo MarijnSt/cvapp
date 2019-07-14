@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Menu from './components/Menu'
 import Content from './components/Content'
 
 function App() {
-  const [display, setDisplay] = useState('Home');
+  const [display, setDisplay] = useState('Home'); 
 
   // Menu item met active id zoeken en class verwijderen
   const removePreviousActive = () => {
@@ -13,7 +13,6 @@ function App() {
     } else {
       return
     }
-    
   }
 
   // Content veranderen en active id meegeven in menu
@@ -44,13 +43,21 @@ function App() {
     }
 
     setDisplay(content)
-
   }
+
+  const giveActive = () => {
+    const test = document.querySelector('.menu-item')
+    test.id = "active-menu"
+  }
+
+  useEffect(() => {
+    setTimeout(giveActive, 100)
+  },[])
 
   return (
     <div className="App">
       <Content display={display}/>
-      <Menu handleClick={changeDisplay}/>
+      <Menu handleClick={changeDisplay} onLoad={giveActive}/>
     </div>
   );
 }
