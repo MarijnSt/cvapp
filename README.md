@@ -9,5 +9,8 @@ Based on the different parts of my cv and vcard:
     *   Contactpage
 
 ### Todo
+    *   Add active class to menu items + remove previous active class
+    *   Add responsiveness
     *   Add dark mode
+    *   Content after structure and functionality
     *   API call

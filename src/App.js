@@ -3,26 +3,48 @@ import Menu from './components/Menu'
 import Content from './components/Content'
 
 function App() {
-  const [display, setDisplay] = useState('Home')
+  const [display, setDisplay] = useState('Home');
 
-  // Textcontent van p meegeven als display, div class active geven
-  const changeDisplay = (event) => {
-    let selected = '';
-    let click = event.target;
+  // Menu item met active id zoeken en class verwijderen
+  const removePreviousActive = () => {
+    if (document.querySelector('.menu-item#active-menu')) {
+      const test = document.querySelector('.menu-item#active-menu');
+      test.removeAttribute('id');
+    } else {
+      return
+    }
     
+  }
+
+  // Content veranderen en active id meegeven in menu
+  const changeDisplay = (event) => {
+    let content = '';
+    let click = event.target;
+
+    //vorige active id wegnemen
+    removePreviousActive()
+    
+    //nieuwe active id toekennen en content aanpassen
     switch (click.tagName) {
       case 'path':
-        selected = click.parentNode.classList.value
+        content = click.parentNode.classList.value
+        click.parentNode.parentNode.id = "active-menu"
         break;
       case 'svg':
-        selected = click.classList.value
+        content = click.classList.value
+        click.parentNode.id = "active-menu"
         break;
-      default:
-        const splitted = click.classList.value.split(' ')
-        selected = splitted.slice(-1)[0]
+      case 'P':
+        content = click.classList.value.split(' ').slice(-1)[0]
+        click.parentNode.id = "active-menu"
+        break;
+      case 'DIV':
+        content = click.classList.value.split(' ').slice(-1)[0]
+        click.id = "active-menu"
     }
 
-    setDisplay(selected)    
+    setDisplay(content)
+
   }
 
   return (

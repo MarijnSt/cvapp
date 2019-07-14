@@ -38,3 +38,15 @@
         color: $accent;
     }
 }
+
+#active-menu {
+    .hidden {
+        visibility: visible;
+        opacity: 1;
+        color: $main;
+    }
+
+    svg {
+        fill: $main;
+    }
+}

@@ -32,19 +32,24 @@
   color: #9BD1E5;
 }
 
+#active-menu .hidden {
+  visibility: visible;
+  opacity: 1;
+  color: #51A3A3;
+}
+#active-menu svg {
+  fill: #51A3A3;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 11fr;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: 100px 1fr;
 }
 .App .menu-container {
   background: #01161E;
   color: #CCDBDC;
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
 }
