@@ -5,19 +5,24 @@ import Content from './components/Content'
 function App() {
   const [display, setDisplay] = useState('Home')
 
-  //Textcontent van p meegeven als display, div class active geven
+  // Textcontent van p meegeven als display, div class active geven
   const changeDisplay = (event) => {
-    console.log(event.target)
+    let selected = '';
+    let click = event.target;
     
-    const tag = event.target.tagName
-
-    if(tag.includes('DIV')){
-      console.log('selected van child p halen')
-    } else {
-      console.log('selected via div van child p halen')
+    switch (click.tagName) {
+      case 'path':
+        selected = click.parentNode.classList.value
+        break;
+      case 'svg':
+        selected = click.classList.value
+        break;
+      default:
+        const splitted = click.classList.value.split(' ')
+        selected = splitted.slice(-1)[0]
     }
-    
-    // setDisplay(selected)
+
+    setDisplay(selected)    
   }
 
   return (

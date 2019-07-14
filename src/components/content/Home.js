@@ -4,7 +4,7 @@ const Home = () => {
 
     return (
         <div>
-            Elaba home 
+            Elaba home
         </div>
     )
 }

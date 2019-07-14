@@ -1,3 +1,37 @@
+.menu-items {
+  width: 100%;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-item {
+  font-size: 10px;
+  color: #CCDBDC;
+  text-align: center;
+}
+.menu-item svg {
+  width: 35px;
+  fill: #CCDBDC;
+  transition: all 0.5s ease;
+}
+.menu-item .hidden {
+  opacity: 0.1;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.menu-item:hover svg {
+  fill: #9BD1E5;
+}
+.menu-item:hover .hidden {
+  visibility: visible;
+  opacity: 1;
+  color: #9BD1E5;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -9,19 +43,10 @@
 .App .menu-container {
   background: #01161E;
   color: #CCDBDC;
-  width: 100%;
   height: 100%;
-  display: grid;
+  width: 100%;
+  display: flex;
   align-items: center;
-  justify-items: center;
-}
-.App .menu-container .menu-item {
-  font-size: 8px;
-  color: #CCDBDC;
-  text-align: center;
-}
-.App .menu-container .icon {
-  width: 30px;
 }
 .App .content-container {
   background: #CCDBDC;
@@ -29,20 +54,10 @@
   height: 100%;
 }
 
-svg {
-  fill: white;
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Oxygen", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
