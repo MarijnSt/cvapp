@@ -43,6 +43,15 @@ $breakpoint1: 850px;
                     }
                 }
             }
+
+            .skills-container {
+                display: grid;
+                grid-template: 1fr 1fr 1fr / 1fr 1fr;
+
+                .header {
+                    grid-column: 1/3;
+                }
+            }
         }
     }
 
