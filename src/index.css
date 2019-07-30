@@ -231,6 +231,23 @@ div.menu-item > p {
   font-style: italic;
 }
 
+.portfolio-container {
+  width: 80%;
+  height: 100%;
+}
+.portfolio-container .port-header {
+  margin-top: 50px;
+}
+.portfolio-container .port-header p {
+  margin-top: 20px;
+}
+.portfolio-container div > h2 {
+  margin-top: 70px;
+}
+.portfolio-container div:last-child {
+  margin-bottom: 50px;
+}
+
 .App {
   width: 100vw;
   height: 100vh;

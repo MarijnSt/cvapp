@@ -3,7 +3,7 @@ import React from 'react'
 import Home from './content/Home/Home'
 import Skills from './content/Skills/Skills'
 import Experience from './content/Experience/Experience'
-import Portfolio from './content/Portfolio'
+import Portfolio from './content/Portfolio/Portfolio'
 import Contact from './content/Contact'
 
 const Content = ({display}) => {

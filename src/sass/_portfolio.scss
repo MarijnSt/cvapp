@@ -1,0 +1,22 @@
+@import 'colors';
+
+.portfolio-container {
+    width: 80%;
+    height: 100%;
+
+    .port-header {
+        margin-top: 50px;
+
+        p {
+            margin-top: 20px;
+        }
+    }
+    
+    div>h2 {
+        margin-top: 70px;
+    }
+
+    div:last-child {
+        margin-bottom: 50px;
+    }
+}

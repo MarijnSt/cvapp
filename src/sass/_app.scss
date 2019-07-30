@@ -2,11 +2,13 @@
 @import 'colors';
 @import 'type';
 
+
 // COMPONENTS
 @import 'menuItems';
 @import 'home';
 @import 'skill';
 @import 'experience';
+@import 'portfolio';
 
 .App {
     width: 100vw;
