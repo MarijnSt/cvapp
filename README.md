@@ -18,4 +18,4 @@ Based on the different parts of my cv and vcard:
 ### Finished
 
 *   Basic menu + responsive + default active id
-*   Basic home pagina
+*   Basic home, skills pagina
