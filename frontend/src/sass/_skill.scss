@@ -1,0 +1,46 @@
+// GENERAL STYLING
+@import 'colors';
+
+.skills-container {
+    > div {
+        margin-top: 50px;
+    }
+}
+
+.other {
+    h3 {
+        margin-top: 20px;    
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    margin-bottom: 50px;
+}
+
+.skill {
+    width: 80%;
+    max-width: 400px;
+    margin: 25px 0;
+
+    .bar {
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .extra {
+        font-weight: 300;
+    }
+
+    .line {
+        height: 8px;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+    .line.active {
+        background: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Mono:300,300i,400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Mono:300,300i,400,400i,700,700i&display=swap");
+h1, h2, h3 {
+  color: #51A3A3;
+  font-family: "Roboto Mono", monospace;
+}
+
+h2 {
+  margin: 20px auto;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+div.menu-item > p {
+  margin: 1em auto;
+  font-family: "Roboto Mono", monospace;
+}
+
+.menu-items {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-item {
+  font-size: 8px;
+  color: #CCDBDC;
+  text-align: center;
+}
+.menu-item svg {
+  width: 25px;
+  fill: #CCDBDC;
+  transition: all 0.5s ease;
+}
+
+.menu-item:hover svg {
+  fill: #9BD1E5;
+}
+
+#active-menu .hidden {
+  visibility: visible;
+  opacity: 1;
+  color: #51A3A3;
+}
+#active-menu svg {
+  fill: #51A3A3;
+}
+
+h1, h2, h3 {
+  color: #51A3A3;
+  font-family: "Roboto Mono", monospace;
+}
+
+h2 {
+  margin: 20px auto;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+div.menu-item > p {
+  margin: 1em auto;
+  font-family: "Roboto Mono", monospace;
+}
+
+.home-container {
+  width: 75%;
+  height: 90%;
+  display: grid;
+  grid-template: 1fr 1fr/100%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.home-container .profile-container {
+  padding-top: 50px;
+}
+.home-container .profile-container h2 {
+  color: #51A3A3;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+.home-container .profile-container h3 {
+  color: #01161E;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.home-container .profile-container p {
+  color: #01161E;
+}
+.home-container .intro-container {
+  width: 100%;
+  text-align: center;
+}
+.home-container .intro-container h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+.home-container .intro-container h3 {
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.home-container .intro-container .header {
+  margin-bottom: 3em;
+}
+.home-container .intro-container p {
+  font-size: 1.5rem;
+  font-family: "Roboto Mono", monospace;
+  margin: 2em 0;
+}
+
+.profile-png {
+  width: 100%;
+  max-width: 150px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2em 0;
+}
+.social-links svg {
+  width: 2em;
+  fill: #01161E;
+}
+.social-links svg:hover {
+  fill: #51A3A3;
+}
+
+.skills-container > div {
+  margin-top: 50px;
+}
+
+.other {
+  margin-bottom: 50px;
+}
+.other h3 {
+  margin-top: 20px;
+}
+.other p {
+  margin-top: 10px;
+}
+
+.skill {
+  width: 80%;
+  max-width: 400px;
+  margin: 25px 0;
+}
+.skill .bar {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.skill .extra {
+  font-weight: 300;
+}
+.skill .line {
+  height: 8px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.skill .line.active {
+  background: white;
+}
+
+.experience-container {
+  display: grid;
+  grid-template: 0.5fr 1fr 1fr 1fr/100%;
+}
+.experience-container .work-container .job-container {
+  margin: 30px auto;
+  line-height: 2rem;
+}
+.experience-container .work-container .job-container .period {
+  font-weight: 700;
+  color: #51A3A3;
+}
+.experience-container .work-container .job-container .company {
+  font-weight: 300;
+}
+.experience-container .work-container .job-container .jobtitle {
+  margin-top: 5px;
+  font-weight: 700;
+}
+.experience-container .education-container .course-container {
+  margin: 30px auto;
+  line-height: 2rem;
+}
+.experience-container .education-container .course-container .course-title {
+  color: #51A3A3;
+}
+.experience-container .education-container .course-container .course-degree {
+  font-weight: 700;
+}
+.experience-container .education-container .course-container .course-school {
+  font-weight: 300;
+  font-style: italic;
+}
+.experience-container .volunteer-container .voluntary-container {
+  margin: 30px auto;
+  line-height: 2rem;
+}
+.experience-container .volunteer-container .voluntary-container .volperiod {
+  color: #51A3A3;
+}
+.experience-container .volunteer-container .voluntary-container .vollocation {
+  font-weight: 700;
+}
+
+.description {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.portfolio-container div > h2 {
+  margin-top: 70px;
+}
+.portfolio-container div:last-child {
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template: 0.5fr 1fr 1fr/100%;
+  grid-row-gap: 50px;
+}
+.contact-container .form-container {
+  font-family: "Roboto Mono", monospace;
+}
+.contact-container .form-container form {
+  width: 100%;
+  height: 100%;
+}
+.contact-container .form-container form > div {
+  margin-top: 40px;
+  display: grid;
+  grid-template: 1fr/0.2fr 1fr;
+}
+.contact-container .form-container form > div input {
+  width: 60%;
+  height: 20px;
+}
+.contact-container .form-container form > div:nth-last-child(2) {
+  grid-template: 0.2fr 1fr/1fr;
+  grid-row-gap: 10px;
+}
+.contact-container .form-container form > div:nth-last-child(2) textarea {
+  height: 150px;
+}
+.contact-container .form-container form > div:last-child {
+  display: block;
+}
+.contact-container .form-container form > div:last-child button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  background: none;
+  border: 1px solid black;
+}
+.contact-container .form-container form > div:last-child button:hover {
+  color: white;
+  background: black;
+}
+.contact-container .links-container > div {
+  width: 75%;
+  margin: 50px auto;
+}
+.contact-container .links-container > div a {
+  text-decoration: none;
+  color: #01161E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-container .links-container > div a img {
+  width: 50px;
+  margin-right: 50px;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 90px/1fr;
+}
+.App .menu-container {
+  background: #01161E;
+  color: #CCDBDC;
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+}
+.App .content-container {
+  background: #CCDBDC;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+.App .content-container > div {
+  width: 80%;
+  height: 100%;
+}
+.App .content-container > div > div.page-header {
+  margin-top: 50px;
+}
+.App .content-container > div > div.page-header p {
+  margin-top: 20px;
+}
+
+@media (min-width: 850px) {
+  .App {
+    display: grid;
+    grid-template: 100%/90px 1fr !important;
+  }
+  .App .menu-container {
+    order: 1;
+  }
+  .App .menu-container .menu-items {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .App .menu-container .menu-items .menu-item {
+    font-size: 10px;
+  }
+  .App .menu-container .menu-items svg {
+    width: 35px;
+  }
+  .App .content-container {
+    order: 2;
+  }
+  .App .content-container .home-container {
+    grid-template: 100%/1fr 1fr;
+  }
+  .App .content-container .home-container .profile-container {
+    grid-column: 1/2;
+    padding-top: 0;
+  }
+  .App .content-container .home-container .intro-container {
+    grid-column: 2/3;
+    height: auto;
+  }
+  .App .content-container .home-container .intro-container p {
+    text-align: right;
+  }
+  .App .content-container .skills-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr;
+    grid-row-gap: 50px;
+  }
+  .App .content-container .skills-container .page-header {
+    grid-column: 1/3;
+  }
+  .App .content-container .skills-container > div {
+    margin: 0;
+  }
+  .App .content-container .experience-container {
+    grid-row-gap: 50px;
+  }
+  .App .content-container .experience-container .work-container, .App .content-container .experience-container .education-container, .App .content-container .experience-container .volunteer-container {
+    display: grid;
+    grid-template: 75px 1fr/1fr 1fr;
+    grid-gap: 20px;
+  }
+  .App .content-container .experience-container .work-container h2, .App .content-container .experience-container .education-container h2, .App .content-container .experience-container .volunteer-container h2 {
+    grid-column: 1/3;
+    margin: 0;
+    justify-self: start;
+    align-self: end;
+  }
+  .App .content-container .experience-container .work-container div, .App .content-container .experience-container .education-container div, .App .content-container .experience-container .volunteer-container div {
+    margin: 0;
+  }
+  .App .content-container .experience-container .education-container {
+    margin-bottom: 100px;
+  }
+
+  .menu-item .hidden {
+    opacity: 0.1;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .menu-item:hover svg {
+    fill: #9BD1E5;
+  }
+  .menu-item:hover .hidden {
+    visibility: visible;
+    opacity: 1;
+    color: #9BD1E5;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

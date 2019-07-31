@@ -1,0 +1,72 @@
+.contact-container {
+    display: grid;
+    grid-template: 0.5fr 1fr 1fr / 100%;
+    grid-row-gap: 50px;
+
+    .form-container {
+        font-family: $roboto-mono;
+
+        form {
+            width: 100%;
+            height: 100%;
+
+            > div {
+                margin-top: 40px;
+                display: grid;
+                grid-template: 1fr / 0.2fr 1fr;
+
+                input {
+                    width: 60%;
+                    height: 20px;
+                }
+            }
+
+            > div:nth-last-child(2) {
+                grid-template: 0.2fr 1fr / 1fr;
+                grid-row-gap: 10px;
+
+                textarea {
+                    height: 150px;
+                }
+            }
+
+            > div:last-child {
+                display: block;
+
+                button {
+                    font-family: $roboto-mono;
+                    font-size: 18px;
+                    height: 40px;
+                    width: 100%;
+                    background: none;
+                    border: 1px solid black;
+
+                    &:hover {
+                        color: white;
+                        background: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .links-container {
+        > div {
+            width: 75%;
+            margin: 50px auto;
+
+            a {
+                text-decoration: none;
+                color: $dark;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
