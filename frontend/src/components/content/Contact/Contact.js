@@ -31,19 +31,8 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-            <div className="links-container">
-                <div className="mail">
-                    <a href="#">
-                        <img src={Mail}/>
-                        <p>Send me a mail</p>
-                    </a>
-                </div>
-                <div className="linkedin">
-                    <a href="#">
-                        <img src={Linked}/>
-                        <p>Send me a message on linkedin</p>
-                    </a>
-                </div>
+            <div className="feedback-container">
+                Elaba
             </div>
         </div>
     )
