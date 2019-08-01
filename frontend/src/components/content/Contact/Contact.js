@@ -1,16 +1,46 @@
 import React, {useState} from 'react'
 import Contactform from './Contactform'
+import axios from 'axios'
 
 const Contact = () => {
-    const [ name, setName ] = useState('')
-    const [ email, setEmail ] = useState('')
+    const [ newName, setNewName ] = useState('')
+    const [ newEmail, setNewEmail ] = useState('')
     const [ clientMessage, setClientMessage ] = useState('')
+    const [ success, setSuccess] = useState(false)
 
     const handleSubmit = (e) => {
+        //stop page reloading
         e.preventDefault()
+        //store inputs in mailobject
+        const mailObject = {
+            name: newName,
+            mail: newEmail,
+            message: clientMessage
+        }
+        //check inputs
 
-        //inputs controleren
-        alert('elaba')
+        //create new mail
+        createMail(mailObject)
+
+        //reset fields
+        setNewName('')
+        setNewEmail('')
+        setClientMessage('')
+    }
+
+    const createMail = (newObject) => {
+        console.log(newObject)
+        axios
+            .post('/send', newObject)
+            .then(response => {
+                if(response.status === 200){
+                    setSuccess(true)
+                    setTimeout(() => {
+                        setSuccess(false)
+                    }, 5000)
+                }
+                console.log(response.status)
+            })
     }
 
     const showInput = (e) => {
@@ -21,13 +51,25 @@ const Contact = () => {
         //change correct state
         switch(whatChanged) {
             case 'name':
-                setName(newInput)
+                setNewName(newInput)
                 break;
             case 'email':
-                setEmail(newInput)
+                setNewEmail(newInput)
                 break;
             case 'message':
                 setClientMessage(newInput)
+        }
+    }
+
+    const Feedback = () => {
+        if (success === true) {
+            return (
+                <div className="successMessage">
+                    <p>You're message has been sent!</p>
+                </div>
+            )
+        } else {
+            return null
         }
     }
 
@@ -39,10 +81,14 @@ const Contact = () => {
                 <p>Send me a message and I'll get back to you as soon as possible.</p>
             </div>
 
+            <div className="feedback-container">
+                <Feedback />
+            </div>
+
             <Contactform
                 submit={handleSubmit}
-                name={name}
-                email={email}
+                name={newName}
+                email={newEmail}
                 message={clientMessage}
                 change={showInput}
             />
@@ -66,9 +112,6 @@ const Contact = () => {
                     </div>
                 </form>
             </div> */}
-            <div className="feedback-container">
-                Elaba
-            </div>
         </div>
     )
 }

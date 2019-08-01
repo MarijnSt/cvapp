@@ -6,15 +6,15 @@ const Contactform = ({submit, name, email, message, change}) => {
         <div className="form-container">
             <form onSubmit={submit}>
             <div>
-                <label for="name">Name:</label>
+                <label htmlFor="name">Name:</label>
                 <input type="text" name="name" value={name} onChange={change} required/>
             </div>
             <div>
-                <label for="email">E-mail:</label>
+                <label htmlFor="email">E-mail:</label>
                 <input type="email" name="email" value={email} onChange={change} required/>
             </div>
             <div>
-                <label for="message">Message:</label>
+                <label htmlFor="message">Message:</label>
                 <textarea name="message" value={message} onChange={change} required/>
             </div>
             <div>
