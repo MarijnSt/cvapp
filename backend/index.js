@@ -21,42 +21,43 @@ app.post('/send', (req, res) => {
         <h3>Contact info</h3>
         <ul>
             <li>Name: ${req.body.name}</li>
-            <li>E-mail: ${req.body.email}</li>
+            <li>E-mail: ${req.body.mail}</li>
         </ul>
         <h3>Message</h3>
         <p>${req.body.message}</p>
     `
     console.log(output)
+    res.json(req.body)
 
-    //transporter
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            type: 'oauth2',
-            user: 'cvmarijn@gmail.com',
-            clientId: clientID,
-            clientSecret: cSecret,
-            refreshToken: refreshT,
-            accessToken: accessT
-        }
-    })
+    // //transporter
+    // let transporter = nodemailer.createTransport({
+    //     service: 'gmail',
+    //     auth: {
+    //         type: 'oauth2',
+    //         user: 'cvmarijn@gmail.com',
+    //         clientId: clientID,
+    //         clientSecret: cSecret,
+    //         refreshToken: refreshT,
+    //         accessToken: accessT
+    //     }
+    // })
 
-    //mailoptions
-    let mailOptions = {
-        from: '"CV Site" <cvmarijn@gmail.com>',
-        to: 'marijn.stammeleer@gmail.com',
-        subject: 'New message on cv site',
-        html: output
-    }
+    // //mailoptions
+    // let mailOptions = {
+    //     from: '"CV Site" <cvmarijn@gmail.com>',
+    //     to: 'marijn.stammeleer@gmail.com',
+    //     subject: 'New message on cv site',
+    //     html: output
+    // }
 
-    // send mail
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error)
-        }
-        console.log("Message sent: %s", info.messageId);
-        console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    })
+    // // send mail
+    // transporter.sendMail(mailOptions, (error, info) => {
+    //     if (error) {
+    //         return console.log(error)
+    //     }
+    //     console.log("Message sent: %s", info.messageId);
+    //     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // })
 })
 
 const PORT = process.env.PORT || 3001
