@@ -4,7 +4,7 @@ import Home from './content/Home/Home'
 import Skills from './content/Skills/Skills'
 import Experience from './content/Experience/Experience'
 import Portfolio from './content/Portfolio/Portfolio'
-import Contact from './content/Contact'
+import Contact from './content/Contact/Contact'
 
 const Content = ({display}) => {
     let displayContent
