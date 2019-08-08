@@ -8,8 +8,8 @@ const Skills = () => {
             <div className="page-header">
                 <h1>Skills</h1>
                 <p>
-                    I still have a long way to go but here's an overview of my programming skills rigth now. 
-                    I'm feeling pretty comfortable with the basic languages HTML, CSS and Javascript and I recently started learning the MERN stack.
+                    I still have a long way to go but here's an overview of my current skills. 
+                    I'm feeling pretty comfortable with the basic languages HTML, CSS and Javascript and I recently started with the MERN stack.
                     You'll find some other relevant skills at the bottom of the page.
                 </p>
             </div>
@@ -17,12 +17,12 @@ const Skills = () => {
                 <h2>Frontend</h2>
                 <Skill name="HTML 5" level="3" extra="Good level"/>
                 <Skill name="CSS 3 / Sass" level="3" extra="Good level, basic knowledge of Sass"/>
-                <Skill name="Javascript" level="2" extra="ES6+ basic knowledge"/>
-                <Skill name="React" level="1" extra="Started learning recently"/>
+                <Skill name="Javascript" level="2" extra="ES6+ intermediate level"/>
+                <Skill name="React" level="1" extra="Started learning recently, basic level"/>
             </div>
             <div className="backend-skills">
                 <h2>Backend</h2>
-                <Skill name="NodeJS" level="1" extra="Started learning recently"/>
+                <Skill name="NodeJS" level="1" extra="Started learning recently, basic level"/>
                 <Skill name="Express" level="1" extra="Started learning recently"/>
                 <Skill name="MongoDB" level="1" extra="Started learning recently"/>
             </div>

@@ -8,6 +8,8 @@ const Contact = () => {
     const [ clientMessage, setClientMessage ] = useState('')
     const [ success, setSuccess] = useState(false)
 
+    const feedback = document.querySelector('.feedback-container')
+
     const handleSubmit = (e) => {
         //stop page reloading
         e.preventDefault()
@@ -17,7 +19,6 @@ const Contact = () => {
             mail: newEmail,
             message: clientMessage
         }
-        //check inputs
 
         //create new mail
         createMail(mailObject)
@@ -37,7 +38,8 @@ const Contact = () => {
                     setSuccess(true)
                     setTimeout(() => {
                         setSuccess(false)
-                    }, 5000)
+                        feedback.style.display = 'none'
+                    }, 3000)
                 }
                 console.log(response.status)
             })
@@ -63,9 +65,11 @@ const Contact = () => {
 
     const Feedback = () => {
         if (success === true) {
+            feedback.style.display = 'block'
+            
             return (
-                <div className="successMessage">
-                    <p>You're message has been sent!</p>
+                <div id="successMessage">
+                    <p>Your message has been sent!</p>
                 </div>
             )
         } else {
@@ -77,7 +81,7 @@ const Contact = () => {
         <div className="contact-container">
             <div className="page-header">
                 <h1>Contact me</h1>
-                <p>Got any questions?</p>
+                <p>Got any questions? Interested in hiring me?</p>
                 <p>Send me a message and I'll get back to you as soon as possible.</p>
             </div>
 
@@ -92,26 +96,6 @@ const Contact = () => {
                 message={clientMessage}
                 change={showInput}
             />
-
-            {/* <div className="form-container">
-                <form method="post" action="send">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" />
-                    </div>
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" />
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea name="message" />
-                    </div>
-                    <div>
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
-            </div> */}
         </div>
     )
 }

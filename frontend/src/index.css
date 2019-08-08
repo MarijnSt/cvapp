@@ -1,21 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Mono:300,300i,400,400i,700,700i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Mono:300,300i,400,400i,700,700i&display=swap");
 h1, h2, h3 {
-  color: #51A3A3;
   font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 2em;
+  color: #1F363D;
 }
 
 h2 {
   margin: 20px auto;
+  color: #1F363D;
+}
+
+h3 {
+  color: #51A3A3;
+  font-weight: 400;
 }
 
 p {
   font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: #1F363D;
+  line-height: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #51A3A3;
 }
 
 div.menu-item > p {
   margin: 1em auto;
-  font-family: "Roboto Mono", monospace;
+  color: #CCDBDC;
 }
 
 .menu-items {
@@ -37,7 +54,7 @@ div.menu-item > p {
 }
 
 .menu-item:hover svg {
-  fill: #9BD1E5;
+  fill: #A7C4B5;
 }
 
 #active-menu .hidden {
@@ -49,24 +66,6 @@ div.menu-item > p {
   fill: #51A3A3;
 }
 
-h1, h2, h3 {
-  color: #51A3A3;
-  font-family: "Roboto Mono", monospace;
-}
-
-h2 {
-  margin: 20px auto;
-}
-
-p {
-  font-family: "Roboto Mono", monospace;
-}
-
-div.menu-item > p {
-  margin: 1em auto;
-  font-family: "Roboto Mono", monospace;
-}
-
 .home-container {
   width: 75%;
   height: 90%;
@@ -74,10 +73,10 @@ div.menu-item > p {
   grid-template: 1fr 1fr/100%;
   justify-items: center;
   align-items: center;
-  text-align: center;
 }
 .home-container .profile-container {
   padding-top: 50px;
+  text-align: center;
 }
 .home-container .profile-container h2 {
   color: #51A3A3;
@@ -85,34 +84,22 @@ div.menu-item > p {
   margin-top: 1em;
 }
 .home-container .profile-container h3 {
-  color: #01161E;
+  color: #1F363D;
   font-weight: 400;
   font-size: 1em;
   margin-bottom: 1em;
 }
-.home-container .profile-container p {
-  color: #01161E;
-}
 .home-container .intro-container {
   width: 100%;
-  text-align: center;
-}
-.home-container .intro-container h1 {
-  font-size: 3rem;
   text-align: left;
 }
 .home-container .intro-container h3 {
-  text-align: left;
-  font-size: 2rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  color: #1F363D;
 }
 .home-container .intro-container .header {
   margin-bottom: 3em;
 }
 .home-container .intro-container p {
-  font-size: 1.5rem;
-  font-family: "Roboto Mono", monospace;
   margin: 2em 0;
 }
 
@@ -129,7 +116,7 @@ div.menu-item > p {
 }
 .social-links svg {
   width: 2em;
-  fill: #01161E;
+  fill: #1F363D;
 }
 .social-links svg:hover {
   fill: #51A3A3;
@@ -160,34 +147,38 @@ div.menu-item > p {
   grid-template-columns: repeat(4, 1fr);
 }
 .skill .extra {
-  font-weight: 300;
+  font-style: italic;
 }
 .skill .line {
   height: 8px;
   width: 80%;
-  background: rgba(255, 255, 255, 0.3);
+  background: #51A3A3;
+  opacity: 0.3;
   border-radius: 10px;
 }
 .skill .line.active {
-  background: white;
+  background: #51A3A3;
+  opacity: 1;
 }
 
 .experience-container {
   display: grid;
   grid-template: 0.5fr 1fr 1fr 1fr/100%;
+  grid-row-gap: 30px;
 }
 .experience-container .work-container .job-container {
   margin: 30px auto;
-  line-height: 2rem;
 }
 .experience-container .work-container .job-container .period {
-  font-weight: 700;
   color: #51A3A3;
-}
-.experience-container .work-container .job-container .company {
   font-weight: 300;
 }
+.experience-container .work-container .job-container .company {
+  color: #51A3A3;
+  font-weight: 700;
+}
 .experience-container .work-container .job-container .jobtitle {
+  color: #1F363D;
   margin-top: 5px;
   font-weight: 700;
 }
@@ -217,8 +208,8 @@ div.menu-item > p {
 }
 
 .description {
-  font-weight: 300;
   font-style: italic;
+  font-size: 0.9em;
 }
 
 .portfolio-container div > h2 {
@@ -231,10 +222,21 @@ div.menu-item > p {
 .contact-container {
   display: grid;
   grid-template: 0.5fr 1fr 1fr/100%;
-  grid-row-gap: 50px;
+  grid-row-gap: 30px;
+}
+.contact-container .feedback-container {
+  display: none;
+}
+.contact-container .feedback-container #successMessage p {
+  color: #51A3A3;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 .contact-container .form-container {
   font-family: "Roboto Mono", monospace;
+  margin-bottom: 50px;
+  font-weight: 300;
 }
 .contact-container .form-container form {
   width: 100%;
@@ -246,15 +248,34 @@ div.menu-item > p {
   grid-template: 1fr/0.2fr 1fr;
 }
 .contact-container .form-container form > div input {
+  font-family: "Roboto Mono", monospace;
   width: 60%;
   height: 20px;
+  background: none;
+  border: 1px solid #1F363D;
+  transition: all 0.3s ease;
+}
+.contact-container .form-container form > div input:focus {
+  outline: none;
+  border: 1px solid #51A3A3;
+  box-shadow: 0 0 3px #51A3A3;
 }
 .contact-container .form-container form > div:nth-last-child(2) {
   grid-template: 0.2fr 1fr/1fr;
   grid-row-gap: 10px;
 }
 .contact-container .form-container form > div:nth-last-child(2) textarea {
+  font-family: "Roboto Mono", monospace;
   height: 150px;
+  background: none;
+  border: 1px solid #1F363D;
+  transition: all 0.5s ease;
+  padding: 5px;
+}
+.contact-container .form-container form > div:nth-last-child(2) textarea:focus {
+  outline: none;
+  border: 1px solid #51A3A3;
+  box-shadow: 0 0 3px #51A3A3;
 }
 .contact-container .form-container form > div:last-child {
   display: block;
@@ -262,29 +283,21 @@ div.menu-item > p {
 .contact-container .form-container form > div:last-child button {
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
+  font-weight: 300;
   height: 40px;
   width: 100%;
   background: none;
-  border: 1px solid black;
+  border: 1px solid #1F363D;
+  color: #1F363D;
+  transition: all 0.5s ease;
+  outline: none;
 }
 .contact-container .form-container form > div:last-child button:hover {
   color: white;
-  background: black;
-}
-.contact-container .links-container > div {
-  width: 75%;
-  margin: 50px auto;
-}
-.contact-container .links-container > div a {
-  text-decoration: none;
-  color: #01161E;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.contact-container .links-container > div a img {
-  width: 50px;
-  margin-right: 50px;
+  border: none;
+  background: #51A3A3;
+  border: 1px solid #51A3A3;
+  cursor: pointer;
 }
 
 .App {
@@ -294,7 +307,7 @@ div.menu-item > p {
   grid-template: 1fr 90px/1fr;
 }
 .App .menu-container {
-  background: #01161E;
+  background: #1F363D;
   color: #CCDBDC;
   display: flex;
   justify-content: center;
@@ -387,6 +400,13 @@ div.menu-item > p {
   .App .content-container .experience-container .education-container {
     margin-bottom: 100px;
   }
+  .App .content-container .form-container form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .App .content-container .form-container form > div input {
+    width: 100%;
+  }
 
   .menu-item .hidden {
     opacity: 0.1;
@@ -395,12 +415,12 @@ div.menu-item > p {
   }
 
   .menu-item:hover svg {
-    fill: #9BD1E5;
+    fill: #A7C4B5;
   }
   .menu-item:hover .hidden {
     visibility: visible;
     opacity: 1;
-    color: #9BD1E5;
+    color: #A7C4B5;
   }
 }
 * {

@@ -1,10 +1,25 @@
 .contact-container {
     display: grid;
     grid-template: 0.5fr 1fr 1fr / 100%;
-    grid-row-gap: 50px;
+    grid-row-gap: 30px;
+
+    .feedback-container {
+        display: none;
+
+        #successMessage {
+            p {
+                color: $main;
+                font-weight: 700;
+                font-size: 22px;
+                text-transform: uppercase;
+            }
+        }
+    }
 
     .form-container {
         font-family: $roboto-mono;
+        margin-bottom: 50px;
+        font-weight: 300;
 
         form {
             width: 100%;
@@ -16,8 +31,18 @@
                 grid-template: 1fr / 0.2fr 1fr;
 
                 input {
+                    font-family: $roboto-mono;
                     width: 60%;
                     height: 20px;
+                    background: none;
+                    border: 1px solid $dark;
+                    transition: all 0.3s ease;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid $main;
+                        box-shadow: 0 0 3px $main;
+                    }
                 }
             }
 
@@ -26,7 +51,18 @@
                 grid-row-gap: 10px;
 
                 textarea {
+                    font-family: $roboto-mono;
                     height: 150px;
+                    background: none;
+                    border: 1px solid $dark;
+                    transition: all 0.5s ease;
+                    padding: 5px;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid $main;
+                        box-shadow: 0 0 3px $main;
+                    }
                 }
             }
 
@@ -36,35 +72,22 @@
                 button {
                     font-family: $roboto-mono;
                     font-size: 18px;
+                    font-weight: 300;
                     height: 40px;
                     width: 100%;
                     background: none;
-                    border: 1px solid black;
+                    border: 1px solid $dark;
+                    color: $dark;
+                    transition: all 0.5s ease;
+                    outline: none;
 
                     &:hover {
                         color: white;
-                        background: black;
+                        border: none;
+                        background: $main;
+                        border: 1px solid $main;
+                        cursor: pointer;
                     }
-                }
-            }
-        }
-    }
-
-    .links-container {
-        > div {
-            width: 75%;
-            margin: 50px auto;
-
-            a {
-                text-decoration: none;
-                color: $dark;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                img {
-                    width: 50px;
-                    margin-right: 50px;
                 }
             }
         }

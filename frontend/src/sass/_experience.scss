@@ -3,22 +3,25 @@
 .experience-container {
     display: grid;
     grid-template: 0.5fr 1fr 1fr 1fr / 100%;
+    grid-row-gap: 30px;
 
     .work-container {
         .job-container {
             margin: 30px auto;
-            line-height: 2rem;
             
             .period {
-                font-weight: 700;
                 color: $main;
-            }
-
-            .company {
                 font-weight: 300;
             }
 
+            .company {
+                color: $main;
+                font-weight: 700;
+                
+            }
+
             .jobtitle {
+                color: $dark;
                 margin-top: 5px;
                 font-weight: 700;
             }
@@ -61,6 +64,6 @@
 }
 
 .description {
-    font-weight: 300;
     font-style: italic;
+    font-size: 0.9em;
 }

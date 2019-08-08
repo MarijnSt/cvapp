@@ -1,5 +1,3 @@
-@import 'colors';
-
 // Google fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Mono:300,300i,400,400i,700,700i&display=swap');
 
@@ -8,19 +6,37 @@ $roboto-mono: 'Roboto Mono', monospace;
 $lato: 'Lato', sans-serif;
 
 h1, h2, h3 {
-    color: $main;
     font-family: $roboto-mono;
+}
+
+h1 {
+    font-size: 2em;
+    color: $dark;
 }
 
 h2 {
     margin: 20px auto;
+    color: $dark;
+}
+
+h3 {
+    color: $main;
+    font-weight: 400;
 }
 
 p {
     font-family: $roboto-mono;
+    font-weight: 300;
+    color: $dark;
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: $main;
 }
 
 div.menu-item > p {
     margin: 1em auto;
-    font-family: $roboto-mono;
+    color: $light;
 }

@@ -9,7 +9,7 @@ const Experience = () => {
         <div className="experience-container">
             <div className="page-header">
                 <h1>Experience</h1>
-                <p>You'l find relevant work experience and education on this page.</p>
+                <p>It's not much (yet) but I've listed all my relevant work experience and education on this page.</p>
             </div>
             <div className="work-container">
                 <h2>Work experience</h2>
@@ -17,7 +17,7 @@ const Experience = () => {
                     period="August 2017 - October 2017"
                     company="Pecu Nino BVBA"
                     title="Digital Marketeer BIO internship"
-                    description="Making e-mailcampaigns and landing pages"
+                    description="Making e-mailcampaigns and landing pages for lead generation"
                 />
                 <Job 
                     period="October 2017 - September 2018"

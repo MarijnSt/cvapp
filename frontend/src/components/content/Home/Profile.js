@@ -9,7 +9,7 @@ const Profile = () => {
             <h2>Marijn Stammeleer</h2>
             <h3>Junior Web Developer</h3>
             <div className="social-links">
-                <a target="_blank" href="https://github.com/MarijnSt">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/MarijnSt">
                     <svg version="1.1" baseProfile="tiny" id="github" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xmlSpace="preserve">
                         <path d="M32.8,49.4c-0.2,0-0.5,0-0.7,0c-0.7-0.3-0.9-0.8-0.9-1.6c0-2,0-4.1,0-6.1c0-1.9-0.2-3.6-1.6-5.1c0.1,0,0.2-0.1,0.3-0.1
 	c1.1-0.2,2.1-0.3,3.2-0.6c2.9-0.8,5.3-2.3,6.6-5.1c0.6-1.4,1-2.9,1.2-4.4c0.3-3.1,0-6.1-2.2-8.5c-0.1-0.1-0.2-0.4-0.1-0.6
@@ -26,7 +26,7 @@ const Profile = () => {
 	C36.8,47.8,34.9,48.7,32.8,49.4z"/>
                     </svg>
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/in/marijn-stammeleer/">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marijn-stammeleer/">
                     <svg version="1.1" baseProfile="tiny" id="linkedin" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xmlSpace="preserve">
                         <path d="M0.2,45.8c0-13.8,0-27.6,0-41.5c0-0.1,0.1-0.2,0.1-0.3c0.3-1.1,0.8-2,1.7-2.8c0.7-0.6,1.5-0.9,2.4-1.2c13.8,0,27.6,0,41.5,0
 	c0.1,0,0.2,0.1,0.3,0.1c1.1,0.3,2,0.8,2.8,1.7c0.6,0.7,0.9,1.5,1.2,2.4c0,13.8,0,27.6,0,41.5c0,0.1-0.1,0.2-0.1,0.3

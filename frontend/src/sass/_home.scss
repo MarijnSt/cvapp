@@ -1,6 +1,3 @@
-@import 'colors';
-@import 'type';
-
 .home-container {
     width: 75%;
     height: 90%;
@@ -8,10 +5,10 @@
     grid-template: 1fr 1fr/100%;
     justify-items: center;
     align-items: center;
-    text-align: center;
 
     .profile-container {
         padding-top: 50px;
+        text-align: center;
         
         h2 {
             color: $main;
@@ -25,26 +22,14 @@
             font-size: 1em;
             margin-bottom: 1em;
         }
-
-        p {
-            color: $dark;
-        }
     }
 
     .intro-container {
         width: 100%;
-        text-align: center;
-        
-        h1 {
-            font-size: 3rem;
-            text-align: left;
-        }
+        text-align: left;
 
         h3 {
-            text-align: left;
-            font-size: 2rem;
-            font-family: $lato;
-            font-weight: 300;
+            color: $dark;
         }
 
         .header {
@@ -52,8 +37,6 @@
         }
 
         p {
-            font-size: 1.5rem;
-            font-family: $roboto-mono;
             margin: 2em 0;
         }
     }

@@ -82,10 +82,21 @@ $breakpoint1: 850px;
                     margin-bottom: 100px;
                 }
             }
+
+            .form-container {
+                form {
+                    width: 70%;
+                    margin: 0 auto;
+
+                    > div input {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 
-    //hide p
+    //hide p in big menu
     .menu-item {
         .hidden {
             opacity: 0.1;
