@@ -29,11 +29,14 @@
                 margin-top: 40px;
                 display: grid;
                 grid-template: 1fr / 0.2fr 1fr;
+                align-items: center;
 
                 input {
                     font-family: $roboto-mono;
-                    width: 60%;
-                    height: 20px;
+                    font-size: 16px;
+                    padding-left: 5px;
+                    width: 99%;
+                    height: 25px;
                     background: none;
                     border: 1px solid $dark;
                     transition: all 0.3s ease;
@@ -52,6 +55,7 @@
 
                 textarea {
                     font-family: $roboto-mono;
+                    font-size: 16px;
                     height: 150px;
                     background: none;
                     border: 1px solid $dark;

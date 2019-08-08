@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
     const createMail = (newObject) => {
-        console.log(newObject)
+        // console.log(newObject)
         axios
             .post('/send', newObject)
             .then(response => {
@@ -41,7 +41,7 @@ const Contact = () => {
                         feedback.style.display = 'none'
                     }, 3000)
                 }
-                console.log(response.status)
+                // console.log(response.status)
             })
     }
 
