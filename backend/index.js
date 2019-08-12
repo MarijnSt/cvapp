@@ -31,8 +31,8 @@ app.post('/send', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: process.env.ACC, //replace in dev mode
-            pass: process.env.PASS //replace in dev mode
+            user: 'cvmarijn@gmail.com', //process.env.ACC
+            pass: 'tetten666' //process.env.PASS 
         }
     })
 

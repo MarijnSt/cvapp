@@ -8,8 +8,8 @@ function App() {
   // Menu item met active id zoeken en class verwijderen
   const removePreviousActive = () => {
     if (document.querySelector('.menu-item#active-menu')) {
-      const test = document.querySelector('.menu-item#active-menu');
-      test.removeAttribute('id');
+      const active = document.querySelector('.menu-item#active-menu');
+      active.removeAttribute('id');
     } else {
       return
     }
@@ -18,36 +18,20 @@ function App() {
   // Content veranderen en active id meegeven in menu
   const changeDisplay = (event) => {
     let content = '';
-    let click = event.target;
+    let click = event.currentTarget;
 
     //vorige active id wegnemen
     removePreviousActive()
-    
-    //nieuwe active id toekennen en content aanpassen
-    switch (click.tagName) {
-      case 'path':
-        content = click.parentNode.classList.value
-        click.parentNode.parentNode.id = "active-menu"
-        break;
-      case 'svg':
-        content = click.classList.value
-        click.parentNode.id = "active-menu"
-        break;
-      case 'P':
-        content = click.classList.value.split(' ').slice(-1)[0]
-        click.parentNode.id = "active-menu"
-        break;
-      case 'DIV':
-        content = click.classList.value.split(' ').slice(-1)[0]
-        click.id = "active-menu"
-    }
 
+    //active id toekennen en content aanpassen
+    click.id = "active-menu"
+    content = click.classList.value.split(' ').slice(-1)[0]
     setDisplay(content)
   }
 
   const giveActive = () => {
-    const test = document.querySelector('.menu-item')
-    test.id = "active-menu"
+    const active = document.querySelector('.menu-item')
+    active.id = "active-menu"
   }
 
   useEffect(() => {

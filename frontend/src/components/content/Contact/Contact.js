@@ -66,7 +66,6 @@ const Contact = () => {
     const Feedback = () => {
         if (success === true) {
             feedback.style.display = 'block'
-            
             return (
                 <div id="successMessage">
                     <p>Your message has been sent!</p>

@@ -53,6 +53,9 @@ div.menu-item > p {
   transition: all 0.5s ease;
 }
 
+.menu-item:hover {
+  cursor: pointer;
+}
 .menu-item:hover svg {
   fill: #A7C4B5;
 }
@@ -80,7 +83,7 @@ div.menu-item > p {
 }
 .home-container .profile-container h2 {
   color: #51A3A3;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 1em;
 }
 .home-container .profile-container h3 {
@@ -105,7 +108,7 @@ div.menu-item > p {
 
 .profile-png {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .social-links {
@@ -226,6 +229,7 @@ div.menu-item > p {
 }
 .contact-container .feedback-container {
   display: none;
+  text-align: center;
 }
 .contact-container .feedback-container #successMessage p {
   color: #51A3A3;

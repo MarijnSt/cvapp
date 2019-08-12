@@ -21,6 +21,7 @@
 }
 
 .menu-item:hover {
+    cursor: pointer;
     svg {
         fill: $accent;
     }
