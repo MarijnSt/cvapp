@@ -38,17 +38,13 @@
                 transition: all 0.5s ease;
 
                 .button-content {
-                    display: grid;
-                    grid-template: 100% / 4fr 1fr;
-                    align-items: center;
-                    column-gap: 5px;
-                    justify-items: center;
 
                     span {
-                        justify-self: end;
+                        padding-right: 10px;
                     }
 
                     svg {
+                        vertical-align: middle;
                         width: 15px;
                         fill: $main;
                         transition: all 0.5s ease;
@@ -71,14 +67,14 @@
     .intro-container {
         width: 100%;
         text-align: left;
-        margin-top: 30px;
+        padding-bottom: 100px;
 
         h3 {
             color: $dark;
         }
 
         .header {
-            margin-bottom: 3em;
+            margin: 3em 0;
         }
 
         p {

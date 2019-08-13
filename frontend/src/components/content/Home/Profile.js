@@ -44,7 +44,7 @@ const Profile = () => {
 			<div className="download-container">
 				<a href={cv} download><button>
 					<div className="button-content">
-						<span>Download a copy of my cv</span>					
+						<span>Download my cv</span>					
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						viewBox="0 0 512 512" xmlSpace="preserve">
 							<path d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64
