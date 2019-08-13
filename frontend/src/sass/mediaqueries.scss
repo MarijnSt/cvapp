@@ -7,6 +7,10 @@ $breakpoint1: 850px;
 
         .menu-container {
             order: 1;
+            position: inherit;
+            height: 100%;
+            align-items: center;
+
 
             .menu-items {
                 height: 95%;
@@ -25,6 +29,9 @@ $breakpoint1: 850px;
 
         .content-container {
             order: 2;
+            overflow: scroll;
+            padding-bottom: 0;
+
 
             .home-container {
                 grid-template: 100%/1fr 1fr;
@@ -75,10 +82,6 @@ $breakpoint1: 850px;
                     div {
                         margin: 0;
                     }
-                }
-    
-                .education-container {
-                    margin-bottom: 100px;
                 }
             }
 

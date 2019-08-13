@@ -169,6 +169,7 @@ div.menu-item > p {
 
 .other {
   margin-bottom: 50px;
+  padding-bottom: 100px;
 }
 .other h3 {
   margin-top: 20px;
@@ -222,6 +223,9 @@ div.menu-item > p {
   color: #1F363D;
   margin-top: 5px;
   font-weight: 700;
+}
+.experience-container .education-container {
+  padding-bottom: 100px;
 }
 .experience-container .education-container .course-container {
   margin: 30px auto;
@@ -349,10 +353,12 @@ div.menu-item > p {
 .App {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template: 1fr 90px/1fr;
 }
 .App .menu-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
   background: #1F363D;
   color: #CCDBDC;
   display: flex;
@@ -360,13 +366,12 @@ div.menu-item > p {
   padding-top: 22px;
 }
 .App .content-container {
-  background: #CCDBDC;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
+  padding-bottom: 100px;
 }
 .App .content-container > div {
   width: 80%;
@@ -386,6 +391,9 @@ div.menu-item > p {
   }
   .App .menu-container {
     order: 1;
+    position: inherit;
+    height: 100%;
+    align-items: center;
   }
   .App .menu-container .menu-items {
     height: 95%;
@@ -400,6 +408,8 @@ div.menu-item > p {
   }
   .App .content-container {
     order: 2;
+    overflow: scroll;
+    padding-bottom: 0;
   }
   .App .content-container .home-container {
     grid-template: 100%/1fr 1fr;
@@ -442,9 +452,6 @@ div.menu-item > p {
   .App .content-container .experience-container .work-container div, .App .content-container .experience-container .education-container div, .App .content-container .experience-container .volunteer-container div {
     margin: 0;
   }
-  .App .content-container .experience-container .education-container {
-    margin-bottom: 100px;
-  }
   .App .content-container .form-container form {
     width: 70%;
     margin: 0 auto;
@@ -468,6 +475,10 @@ div.menu-item > p {
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: #CCDBDC;
 }
 
 /*# sourceMappingURL=index.css.map */

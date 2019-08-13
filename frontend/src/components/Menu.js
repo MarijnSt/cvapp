@@ -1,15 +1,6 @@
 import React from 'react'
 import MenuItem from './MenuItem'
 
-//images
-// nog proberen om met svg te werken
-// import home from '../images/menu-icons/home.png'
-// import home from '../images/menu-svg/home.svg'
-// import skills from '../images/menu-icons/skills.png'
-// import work from '../images/menu-icons/work.png'
-// import github from '../images/menu-icons/github.png'
-// import contact from '../images/menu-icons/contact.png'
-
 const Menu = ({handleClick}) => {
     const menuItems = ['Home', 'Skills', 'Experience', 'Portfolio', 'Contact']
 

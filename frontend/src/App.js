@@ -27,6 +27,15 @@ function App() {
     click.id = "active-menu"
     content = click.classList.value.split(' ').slice(-1)[0]
     setDisplay(content)
+    scrollUp()
+  }
+
+  const scrollUp = () => {
+    if (window.innerWidth > 850) {
+      document.querySelector('.content-container').scrollTop = 0
+    } else {
+      document.documentElement.scrollTop = 0
+    }
   }
 
   const giveActive = () => {

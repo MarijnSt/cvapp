@@ -13,10 +13,13 @@
 .App {
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template: 1fr 90px / 1fr;
+    
 
     .menu-container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 75px;
         background: $dark;
         color: $light;
         display: flex;
@@ -25,13 +28,12 @@
     }
 
     .content-container {
-        background: $light;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: scroll;
+        padding-bottom: 100px;
 
         > div {
             width: 80%;
