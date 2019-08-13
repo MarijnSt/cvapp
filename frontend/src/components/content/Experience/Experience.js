@@ -9,7 +9,7 @@ const Experience = () => {
         <div className="experience-container">
             <div className="page-header">
                 <h1>Experience</h1>
-                <p>It's not much (yet) but I've listed all my relevant work experience and education on this page.</p>
+                <p>I've listed all my relevant work experience and education on this page.</p>
             </div>
             <div className="work-container">
                 <h2>Work experience</h2>
@@ -32,12 +32,12 @@ const Experience = () => {
                 <Voluntary 
                     period="2009 - 2015"
                     location="Chiro Jospaai Aaigem"
-                    description="Leader for 6 years (4 years as head leader). Designing posters, flyers, clothing, ... Maintaining website and social media"
+                    description="Youth movement leader for 6 years (4 years as head leader). Designing posters, flyers, clothing, ... Maintaining website and social media"
                 />
                 <Voluntary 
                     period="2015 - 2018"
                     location="Chiro Gewest Aalst"
-                    description="Leader for 3 years. Help and support Chiro's from the Aalst region. Designing posters, flyers, ... Maintaining website and social media"
+                    description="Leader for 3 years. Providing help and support for Chiro's from the Aalst region. Designing posters, flyers, ... Maintaining website and social media"
                 />
             </div>
 

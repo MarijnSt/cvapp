@@ -15,22 +15,22 @@ const Skills = () => {
             </div>
             <div className="frontend-skills">
                 <h2>Frontend</h2>
-                <Skill name="HTML 5" level="3" extra="Good level"/>
+                <Skill name="HTML 5" level="3" extra="Good knowledge"/>
                 <Skill name="CSS 3 / Sass" level="3" extra="Good level, basic knowledge of Sass"/>
-                <Skill name="Javascript" level="2" extra="ES6+ intermediate level"/>
-                <Skill name="React" level="1" extra="Started learning recently, basic level"/>
+                <Skill name="Javascript" level="2" extra="ES6+ intermediate knowledge"/>
+                <Skill name="React" level="1" extra="Started learning recently, basic knowledge"/>
             </div>
             <div className="backend-skills">
                 <h2>Backend</h2>
-                <Skill name="NodeJS" level="1" extra="Started learning recently, basic level"/>
+                <Skill name="NodeJS" level="1" extra="Started learning recently, basic knowledge"/>
                 <Skill name="Express" level="1" extra="Started learning recently"/>
                 <Skill name="MongoDB" level="1" extra="Started learning recently"/>
             </div>
             <div className="languages">
                 <h2>Languages</h2>
-                <Skill name="Dutch" level="4" extra="Mother tongue"/>
-                <Skill name="English" level="3" extra="Good level"/>
-                <Skill name="French" level="2" extra="Basic level"/>
+                <Skill name="Dutch" level="4" extra="Native Language"/>
+                <Skill name="English" level="3" extra="Fluent (speaking, writing, reading)"/>
+                <Skill name="French" level="2" extra="Intermediate (speaking, reading) basic (writing)"/>
             </div>
             <div className="other">
                 <h2>Other</h2>
