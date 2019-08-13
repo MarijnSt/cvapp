@@ -16,7 +16,7 @@ const Skills = () => {
             <div className="frontend-skills">
                 <h2>Frontend</h2>
                 <Skill name="HTML 5" level="3" extra="Good knowledge"/>
-                <Skill name="CSS 3 / Sass" level="3" extra="Good level, basic knowledge of Sass"/>
+                <Skill name="CSS 3 / Sass" level="3" extra="Good knowledge, basic knowledge of Sass"/>
                 <Skill name="Javascript" level="2" extra="ES6+ intermediate knowledge"/>
                 <Skill name="React" level="1" extra="Started learning recently, basic knowledge"/>
             </div>
@@ -30,7 +30,7 @@ const Skills = () => {
                 <h2>Languages</h2>
                 <Skill name="Dutch" level="4" extra="Native Language"/>
                 <Skill name="English" level="3" extra="Fluent (speaking, writing, reading)"/>
-                <Skill name="French" level="2" extra="Intermediate (speaking, reading) basic (writing)"/>
+                <Skill name="French" level="2" extra="Intermediate (speaking, writing, reading)"/>
             </div>
             <div className="other">
                 <h2>Other</h2>

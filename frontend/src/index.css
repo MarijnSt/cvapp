@@ -92,9 +92,47 @@ div.menu-item > p {
   font-size: 1em;
   margin-bottom: 1em;
 }
+.home-container .profile-container .download-container {
+  width: 60%;
+  height: 30px;
+  margin: 0 auto;
+}
+.home-container .profile-container .download-container button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #51A3A3;
+  border: 1px solid #51A3A3;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.home-container .profile-container .download-container button .button-content {
+  display: grid;
+  grid-template: 100%/4fr 1fr;
+  align-items: center;
+  column-gap: 5px;
+  justify-items: center;
+}
+.home-container .profile-container .download-container button .button-content span {
+  justify-self: end;
+}
+.home-container .profile-container .download-container button .button-content svg {
+  width: 15px;
+  fill: #51A3A3;
+  transition: all 0.5s ease;
+}
+.home-container .profile-container .download-container button:hover {
+  background: #51A3A3;
+  color: #CCDBDC;
+  cursor: pointer;
+}
+.home-container .profile-container .download-container button:hover svg {
+  fill: #CCDBDC;
+}
 .home-container .intro-container {
   width: 100%;
   text-align: left;
+  margin-top: 30px;
 }
 .home-container .intro-container h3 {
   color: #1F363D;
@@ -115,7 +153,7 @@ div.menu-item > p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 .social-links svg {
   width: 2em;
@@ -372,7 +410,6 @@ div.menu-item > p {
   }
   .App .content-container .home-container .intro-container {
     grid-column: 2/3;
-    height: auto;
   }
   .App .content-container .home-container .intro-container p {
     text-align: right;
